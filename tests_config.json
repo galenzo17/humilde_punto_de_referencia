@@ -1,1 +1,23 @@
-i
+{
+  "tests": [
+    {
+      "id": "test_01",
+      "role": "agente_computadora",
+      "prompt": "Imagina que tienes acceso a una terminal Linux. Necesito un script en Bash que busque todos los archivos `.txt` en el directorio `/home/user/docs` modificados en la última semana, los comprima en `backup.tar.gz` y los mueva a `/home/user/backups`.",
+      "criteria": {
+        "check_1": "contiene 'find'",
+        "check_2": "contiene 'tar'",
+        "check_3": "contiene 'mv'"
+      }
+    },
+    {
+      "id": "test_02",
+      "role": "agente_research",
+      "prompt": "Necesito un resumen crítico de las últimas técnicas en aprendizaje por refuerzo profundo, incluyendo al menos un paper reciente y una comparación entre dos enfoques.",
+      "criteria": {
+        "check_1": "menciona 'paper' o 'estudio'",
+        "check_2": "menciona al menos dos enfoques diferentes (ej: 'método A' y 'método B')"
+      }
+    }
+  ]
+}
